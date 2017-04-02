@@ -1,0 +1,52 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: top;
+}
+
+body {
+  height: 2000px;
+  background: #1C1C1C;
+}
+
+.paralax{
+    z-index: -1;
+    position: fixed;
+    background-position: bottom center;
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+
+    -webkit-transform: translateY(var(--translateY));
+    transform: translateY(var(--translateY));
+    will-change: transform;
+}
+
+.p1{    background-image: url(../img/1.png);}
+.p2{    background-image: url(../img/2.png);}
+.p3{    background-image: url(../img/3.png);}
+.p4{    background-image: url(../img/4.png);}
+.p5{    background-image: url(../img/5.png);}
+.p6{    background-image: url(../img/6.png);}
+.p7{    background-image: url(../img/7.png);}
+.p8{    background-image: url(../img/8.png);}
+.p9{    background-image: url(../img/9.png);}
+.p92{    background-image: url(../img/9.2.png);}
+.p10{    background-image: url(../img/10.png);}
+.pp{
+    z-index: 0;
+    position: absolute;
+    margin-top: 100vh;
+    height: 50vh;
+    background-color: rgb(28,28,28);
+}
+
+.page{
+    position: absolute;
+    margin-top: 150vh;
+    z-index: 1;
+}
