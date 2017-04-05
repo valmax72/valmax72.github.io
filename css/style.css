@@ -1,0 +1,147 @@
+/* FONT */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,100,700,300italic,400italic,700italic,900);
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.1;
+    color: #CCC;}
+body {
+  background: #1C1C1C;}
+.paralax{
+    z-index: -1;
+    background-position: bottom center;
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+
+    -webkit-transform: translateY(var(--translateY));
+    transform: translateY(var(--translateY));
+    will-change: transform;}
+
+.p1{    background-image: url(../img/p1.png);}
+.p2{    background-image: url(../img/p2.png);}
+.p3{    background-image: url(../img/p3.png);}
+.p4{    background-image: url(../img/p4.png);}
+.p5{    background-image: url(../img/p5.png);}
+.p6{    background-image: url(../img/p6.png);}
+.p7{    background-image: url(../img/p7.png);}
+.p8{    background-image: url(../img/p8.png);}
+.p9{    background-image: url(../img/p9.png);}
+.p92{    background-image: url(../img/p9.2.png);}
+.p10{    background-image: url(../img/p10.png);}
+.pp{
+    z-index: 0;
+    position: absolute;
+    margin-top: 100vh;
+    height: 50vh;
+    background-color: rgb(28,28,28);}
+
+.page{
+
+    margin-bottom: 20vh; /******************* A supprimer *******************/
+
+    width: 100%;
+    position: absolute;
+    margin-top: 150vh;
+    z-index: 1;}
+.content{
+    margin: 0 auto;
+    width: 1000px;}
+h1, h2, h3, h4, h5, h6 {line-height: 1.4; font-weight: 300; text-align: center}
+h1{font-size: 4em; text-transform: uppercase}
+h2{font-size: 2.1em}
+h3{font-size: 1.5em}
+h4{font-size: 0.9em}
+h5{font-size: 0.8em}
+h6{font-size: 0.6em}
+/*formatage text*/
+a{ text-decoration: none; font-weight: 300;} /*mettre le text en normale*/
+b{font-weight: bold;} /*mettre le text en gras*/
+i{font-style:italic;}/*mettre le text en italic*/
+small{font-size: 75%;}/*mettre le text en plus petit*/
+ins{text-decoration: underline}/*ligne en dessous*/
+
+/* CSS du site
+ ********************************/
+.work{
+    margin: 0 auto;
+    height: 226px;
+    background-size: auto 100vh;
+    background: url(../img/work.png) bottom center no-repeat;
+}
+.work h1{margin: auto auto; line-height: 226px}
+
+.wrap{
+    width:58%;
+    transform-origin:60% 0;
+    transform: rotate(-45deg);}
+.wrap > a{
+    float:left;
+    width:19%;
+    padding-bottom:9.5%;
+    margin:0.5%;
+    background-image:url(https://www.monsieurtshirt.com/11357-thickbox_default/t-shirt-j-y-vais-au-talent-.jpg);
+    background-position:center center;
+    background-size: cover;}
+.wrap > a > h3{
+    transform: rotate(45deg);
+    line-height: 9.5%;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top:50%;
+    color: #0300c0;}
+.wrap > a:hover{
+    background: #fffffb;
+    width:20%;
+    padding-bottom:10%;
+    margin:0;}
+.wrap > a:nth-child(3){
+    clear:left;
+    margin-left:0.5%;
+    width:39%;
+    padding-bottom:20.5%;}
+.wrap > a:nth-child(4){
+    margin-left:0.5%;
+    margin-top: 21.5%;}
+.wrap > a:nth-child(4):hover{
+    margin-left:0;
+    margin-top: 21%;}
+.wrap > a:nth-child(5){
+    clear:left;
+    margin-left:0.5%;}
+.wrap > a:nth-child(5):hover{
+    margin-left:0;}
+.wrap > a:nth-child(6), .wrap > a:nth-child(7){
+    margin-left:0.5%;
+    width:39%;
+    padding-bottom:20.5%;}
+.wrap > a:nth-child(3):hover, .wrap > a:nth-child(6):hover, .wrap > a:nth-child(7):hover{
+    margin-left:0;
+    width:40%;
+    padding-bottom:21%;}
+
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+    .content{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .content{
+        width: 92%;
+    }
+}
