@@ -15,10 +15,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 body {
   background: #1C1C1C;}
 .page{
-
-    margin-bottom: 20vh; /******************* A supprimer ***********************************************/
-
-    width: 100%;
+        width: 100%;
     margin-top: 50vh;
     z-index: 1;}
 .content{
@@ -75,17 +72,14 @@ ins{text-decoration: underline}/*ligne en dessous*/
     perspective: 1px;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
-
-    perspective-origin-x: 100%;}
+    overflow-y: auto;}
 .ParallaxLayer {
     padding: 10vh 0;
 
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    transform-origin-x: 100%;}
+    left: 0;}
 .ParallaxBase {transform: translateZ(0);}
 .ParallaxBack {transform: translateZ(-1px) scale(2);}
 .ParallaxDeep {transform: translateZ(-2px) scale(3);}
@@ -96,9 +90,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
 
 
 .scene{
-    height: 100vh;
-    z-index: -1;
-    margin-bottom: 35vh;
+    border-bottom: solid 35vh rgb(28,28,28);
 }
 .scene div{
     padding: inherit;
@@ -107,7 +99,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
     position: absolute;
     height: 100vh;
     background-repeat: repeat-x;
-    background-position: center center;
+    background-position: center;
     background-size: auto 100vh;
     width: 100%;
 }
@@ -143,12 +135,10 @@ ins{text-decoration: underline}/*ligne en dessous*/
     width: 19%;
     padding-bottom:19%;
     margin:0.5%;
-    background: #fff;
+    background: #fff center;
+    background-size: cover;
     float:left;
     position:relative;
-
-    background-position:center center;
-    background-size: cover;
 
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
@@ -191,7 +181,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
 .diamond:hover{
     width: 20%;
     padding-bottom:20%;
-    margin:0%;}
+    margin:0;}
 .t2:hover{margin-top: 20%}
 .t4:hover, .t1:hover{
     width: 40%;
@@ -216,9 +206,8 @@ ins{text-decoration: underline}/*ligne en dessous*/
     position: absolute;
     margin-left: -50%;
 
-    background-position: center center;
     background-size: cover;
-    background: url(../img/BackgroundServices.png);}
+    background: #1C1C1C url(../img/BackgroundServices.png) center;}
 .services p {text-align: center;}
 .BS{
     margin-top: 150px;
@@ -304,8 +293,8 @@ ins{text-decoration: underline}/*ligne en dessous*/
         margin-top: 24%;
         margin-left: 82%;}
     .l5{
-        margin-left: 35;
-        margin-top: 0%;}
+        margin-left: 35%;
+        margin-top: 0;}
     .l6{
     }
 }
