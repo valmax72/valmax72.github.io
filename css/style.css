@@ -38,6 +38,35 @@ i{font-style:italic;}/*mettre le text en italic*/
 small{font-size: 75%;}/*mettre le text en plus petit*/
 ins{text-decoration: underline}/*ligne en dessous*/
 
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;}
+::-webkit-scrollbar-thumb {
+    scrollbar-3dlight-color: #00cc00;
+    scrollbar-darkshadow-color: #6633cc;
+    background: rgba(164,26,26,0.35);
+    border: 4px solid rgba(28,28,28,1);
+    border-radius: 50px;}
+::-webkit-scrollbar-thumb:hover {background: rgba(164,26,26,0.5);}
+::-webkit-scrollbar-thumb:active {background: rgba(164,26,26,0.75);}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+    border: 4px solid rgba(28,28,28,1);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+    background: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-track:active {
+    background: rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 /* CSS du site
  ********************************/
 
@@ -182,12 +211,14 @@ ins{text-decoration: underline}/*ligne en dessous*/
 .services{
     margin-top: 5vh;}
 .servicesB{
-    margin-top: -60%;
-    padding-bottom: 40%;
+    transform: translateZ(-1px) scale(1);
+    width: 200%;
+    position: absolute;
+    margin-left: -50%;
+
     background-position: center center;
     background-size: cover;
-    background: url(../img/BackgroundServices.png);
-}
+    background: url(../img/BackgroundServices.png);}
 .services p {text-align: center;}
 .BS{
     margin-top: 150px;
