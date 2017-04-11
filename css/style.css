@@ -1,7 +1,10 @@
 /* FONT */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,100,700,300italic,400italic,700italic,900,900italic);
 
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del,
+details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe,
+img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong,
+sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -199,7 +202,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
 .transition img{margin-top: 5%;}
 
 .services{
-    margin-top: 5vh;}
+    margin-top: 5vh; padding-bottom: 25%;}
 .servicesB{
     transform: translateZ(-1px) scale(1);
     width: 200%;
@@ -215,7 +218,6 @@ ins{text-decoration: underline}/*ligne en dessous*/
     padding-bottom: 8%;
     background-size: cover;
     background-image: url(../img/trace.png);}
-
 .planete{
     position: absolute;
     z-index: 10;
@@ -223,7 +225,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
     padding-bottom: 150px;
     background: url(../img/planete.png) center;
     background-size: cover;
-    margin-top: 37%;
+    margin-top: 45%;
     margin-left: 65%;}
 
 .losange{
@@ -282,7 +284,43 @@ ins{text-decoration: underline}/*ligne en dessous*/
     background-color: #951A1A;}
 .l6:hover{background-color: #851a1a;}
 
+.Moi{
+    padding-top: 8%;
+    text-align: center;
+    font-size: 17px;
+    height: 100%;
+    background: url(../img/B1.png) center no-repeat;
+    background-size: cover;}
+.Moi div img{margin-bottom: 10vh; margin-right: 10%; margin-left: 10%}
+.Moi div p span{color: #A21919;}
+.contact{
+    vertical-align: middle;
+}
+.contactB {
+    min-height: 500px;
+    color: #A21919;
+    text-align: center;
+    font-size: 17px;
+    background: url(../img/B2.png) center no-repeat;}
+.contactT{
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(255,255,255,0.8);}
+.contactT p, .contact h1{color: #951A1A; margin-top: 15px}
+.contactT a{color: #fff; font-size: 0; vertical-align: middle;
+-webkit-transition: all 0.35s ease;
+-moz-transition: all 0.35s ease;
+-o-transition: all 0.35s ease;
+transition: all 0.35s ease ;}
+.contactT span{font-size: 3px}
+.contact p:hover > a {font-size: 15px;}
 
+.Footer{
+    background: #141414;
+    padding: 10px;
+}
 
 /* Media queries */
 @media screen and (min-width: 2200px){
@@ -301,6 +339,31 @@ ins{text-decoration: underline}/*ligne en dessous*/
 }
 @media screen and (max-width: 1000px) {
     .content{width: 80%;}
+
+    #DiamondGrid{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        width:90%;
+        margin-left: 5%;
+        text-align: center;}
+    .diamond:nth-child(1){
+        margin-top: 18%;
+    }
+    .diamond, .t1, .t2,.t3,.t4{
+        transform:rotate(-45deg);
+        -ms-transform:rotate(-45deg);
+        -webkit-transform:rotate(-45deg);
+        width: 38%;
+        padding-bottom: 38%;
+        margin: 1% 1% 20% 30%;
+        clear:left;
+        text-align: center;}
+    .diamond:hover, .t1:hover, .t2:hover,.t3:hover,.t4:hover{
+        width: 40%;
+        padding-bottom: 40%;
+        margin: 0 0 19% 29%;}
+
 }
 @media screen and (max-width: 650px) {
     .content{width: 92%;}
