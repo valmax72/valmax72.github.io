@@ -11,7 +11,7 @@ sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var,
     vertical-align: top;
 
     font-family: Lato, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1em;
     line-height: 1.1;
     color: #CCC;}
@@ -94,6 +94,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
 
 .scene{
     border-bottom: solid 35vh rgb(28,28,28);
+    z-index: -2;
 }
 .scene div{
     padding: inherit;
@@ -289,7 +290,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
     text-align: center;
     font-size: 17px;
     height: 100%;
-    background: url(../img/B1.png) center no-repeat;
+    background: url(../img/B1.png) center no-repeat fixed;
     background-size: cover;}
 .Moi div img{margin-bottom: 10vh; margin-right: 10%; margin-left: 10%}
 .Moi div p span{color: #A21919;}
@@ -301,7 +302,8 @@ ins{text-decoration: underline}/*ligne en dessous*/
     color: #A21919;
     text-align: center;
     font-size: 17px;
-    background: url(../img/B2.png) center no-repeat;}
+    background: url(../img/B2.png) center no-repeat fixed;
+    background-size: cover;}
 .contactT{
     margin: 20px auto;
     padding: 20px;
