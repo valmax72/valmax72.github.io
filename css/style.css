@@ -38,35 +38,6 @@ i{font-style:italic;}/*mettre le text en italic*/
 small{font-size: 75%;}/*mettre le text en plus petit*/
 ins{text-decoration: underline}/*ligne en dessous*/
 
-::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;}
-::-webkit-scrollbar-button {
-    width: 0;
-    height: 0;}
-::-webkit-scrollbar-thumb {
-    scrollbar-3dlight-color: #00cc00;
-    scrollbar-darkshadow-color: #6633cc;
-    background: rgba(164,26,26,0.35);
-    border: 4px solid rgba(28,28,28,1);
-    border-radius: 50px;}
-::-webkit-scrollbar-thumb:hover {background: rgba(164,26,26,0.5);}
-::-webkit-scrollbar-thumb:active {background: rgba(164,26,26,0.75);}
-::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0);
-    border: 4px solid rgba(28,28,28,1);
-    border-radius: 50px;
-}
-::-webkit-scrollbar-track:hover {
-    background: rgba(0,0,0,0.2);
-}
-::-webkit-scrollbar-track:active {
-    background: rgba(0,0,0,0.3);
-}
-::-webkit-scrollbar-corner {
-    background: transparent;
-}
-
 /* CSS du site
  ********************************/
 
@@ -209,7 +180,7 @@ ins{text-decoration: underline}/*ligne en dessous*/
     width: 200%;
     position: absolute;
     margin-left: -50%;
-    top: -100vh;
+    top: -50vh;
 
     background-size: cover;
     background: #1C1C1C url(../img/BackgroundServices.png) center;}
@@ -324,6 +295,8 @@ transition: all 0.35s ease ;}
     padding: 10px;
 }
 
+
+
 /* Media queries */
 @media screen and (min-width: 2200px){
     .l2{
@@ -369,4 +342,10 @@ transition: all 0.35s ease ;}
 }
 @media screen and (max-width: 650px) {
     .content{width: 92%;}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .servicesB{
+        background: url(../img/BackgroundServices.png) center;}
+    .p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p92,.p10{transform: translateZ(0) scale(1)}
 }
